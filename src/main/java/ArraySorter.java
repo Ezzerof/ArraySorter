@@ -20,6 +20,10 @@ public class ArraySorter {
 
     void merge(int arr[], int l, int m, int r)
     {
+        if (arr.length < 2){
+            return;
+        }
+
         int n1 = m - l + 1;
         int n2 = r - m;
 
